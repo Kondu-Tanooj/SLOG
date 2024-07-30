@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD NEW USER PAGE</title>
+    <link rel="stylesheet" href="addnewuser.css">
+</head>
+<body>
+  <div id="parent-cont">
+    <div id="image_add">
+      <img src="images/user-file.png" alt="image">
+    </div>
+    <div class="container-adduser">
+        <div class="login form">
+            <header style="color: rgb(255, 132, 16);">Update User</header>
+            <form action="addnewuser.php" method="post">
+              <input type="text" name="rf_id" placeholder="ID">
+              <input type="text" name="register_number" placeholder="Register Number">
+              <input type="text" name="full_name" placeholder="Full Name">
+              <input type="text" name="department" placeholder="Department">
+              <input type="text" name="batch" placeholder="Batch">
+              <input type="submit" class="button" value="ADD">
+            </form>
+          </div>
+    </div> 
+  </div>
+  <div class="logout-container">
+    <a href="user.html"><button class="logout" role="button"><b><--BACK</b></button></a>
+</div>  
+</body>
+</html>

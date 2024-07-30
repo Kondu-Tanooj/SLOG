@@ -1,0 +1,178 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #ffffff;
+}
+#parent-cont{
+  display: flex;
+  justify-content: center;
+  align-content: space-between; 
+  padding-top: 2%;
+}
+#image_add{
+  padding-top: 10%;
+}
+.container-adduser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+#check:checked ~ .login{
+  display: none;
+}
+#check{
+  display: none;
+}
+.container-adduser .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgb(255, 132, 16);
+ }
+.form a{
+  font-size: 16px;
+  color: #f98f16;
+  text-decoration: none;
+  width: 100%;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+/* ---------------- button start --------------- */
+.form input.button {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: rgb(255, 132, 16);
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #000000;
+  border-radius: 4px;
+}
+
+.form input.button:hover {
+  background: #fbd4a8;
+  box-shadow: 0px 2px 10px 5px rgb(255, 132, 16);
+  color: rgb(255, 132, 16);
+}
+
+.form input.button:after {
+  content: "";
+  background: rgb(255, 132, 16);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.form input.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.form input.button:focus { outline:0; }
+
+
+/* ------------ button end ------------------ */
+
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: rgba(252, 150, 47, 0.878);
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration:underline;
+}
+
+@media screen and (max-width: 934px) {
+  
+  #parent-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10%;
+  }
+  .container-adduser{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+
+}
+.logout {
+  background-color: #c00000;
+  border-radius: 100px;
+  box-shadow: rgba(245, 52, 52, 0.2) 0 -25px 18px -14px inset,rgba(171, 27, 17, 0.15) 0 1px 2px,rgba(240, 35, 35, 0.15) 0 2px 4px,rgba(210, 17, 17, 0.15) 0 4px 8px,rgba(195, 13, 13, 0.15) 0 8px 16px,rgba(145, 3, 3, 0.15) 0 16px 32px;
+  color: rgb(95, 2, 2);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: relative;
+  top: -130px;
+  width: 155px;
+}
+.logout:hover{
+  background: #ff1c1c;
+}
